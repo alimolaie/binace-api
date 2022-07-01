@@ -19,4 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/bitcoin-rate',[BitcoinController::class,'index']);
+Route::get('/bitcoin',[BitcoinController::class,'index']);
